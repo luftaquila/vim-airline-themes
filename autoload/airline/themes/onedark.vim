@@ -54,6 +54,8 @@ function! airline#themes#onedark#refresh()
   let g:airline#themes#onedark#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
   let g:airline#themes#onedark#palette.replace_modified = g:airline#themes#onedark#palette.normal_modified
 
+  let g:airline#themes#onedark#palette.commandline = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+
   let s:V1 = [ '#282C34', '#C678DD', s:term_black, s:term_purple ]
   let s:V2 = s:N2
   let s:V3 = [ '#C678DD', '#282C34', s:term_purple, '' ]
